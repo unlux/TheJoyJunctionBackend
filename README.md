@@ -34,13 +34,23 @@
 
 ## Compatibility
 
-This starter is compatible with versions >= 2 of `@medusajs/medusa`. 
+This starter is compatible with versions >= 2 of `@medusajs/medusa`.
 
 ## Getting Started
 
 Visit the [Quickstart Guide](https://docs.medusajs.com/learn/installation) to set up a server.
 
 Visit the [Docs](https://docs.medusajs.com/learn/installation#get-started) to learn more about our system requirements.
+
+### Joy Junction Specific Setup
+
+This project includes Google Authentication integration. To set it up:
+
+1. **Configure Environment Variables**: Copy `.env.template` to `.env` and fill in your Google OAuth credentials
+2. **Validate Configuration**: Run `bun run validate-google-auth.ts` to check your setup
+3. **Start Development**: Run `bun run dev` to start the backend server
+
+For detailed Google Auth setup instructions, see [`../GOOGLE_AUTH_SETUP.md`](../GOOGLE_AUTH_SETUP.md).
 
 ## What is Medusa
 
